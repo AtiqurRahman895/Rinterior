@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 /* src/styles.css */
 @tailwind base;
 @tailwind components;
@@ -28,10 +30,13 @@
     @apply scroll-smooth;
   }
   body {
-    @apply text-black bg-custom-white overflow-x-hidden;
+    @apply text-black bg-custom-white overflow-x-hidden font-manrope;
   }
   p,span,a{
     font-size: 14px;
+  }
+  p{
+    @apply text-[#737373]
   }
   input,textarea{
     @apply w-full outline-none bg-white text-black p-3 
@@ -53,4 +58,7 @@
     .aboutSection{
         @apply py-8 lg:py-16
     }
+    /* .eachMenu{
+      @apply 
+    } */
 }

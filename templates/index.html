@@ -21,7 +21,7 @@
     <!-- navbar -->
     <header class="w-[100%] pt-4">
       <div class="navbar container">
-        <a href="" class="navbar-start flex space-x-2">
+        <a href="" class="navbar-start flex space-x-2 items-center">
           <i
             class="fa-solid fa-arrow-right bg-custom-green rounded-full p-2 rotate-[310deg] text-[1.2rem]"
           ></i>
@@ -30,11 +30,11 @@
 
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
+            <li><a class="eachMenu" href="./index.html">Home</a></li>
+            <li><a class="eachMenu" href="">Services</a></li>
+            <li><a class="eachMenu" href="">Portfolio</a></li>
+            <li><a class="eachMenu" href="">News</a></li>
+            <li><a class="eachMenu" href="">Contact Us</a></li>
           </ul>
         </div>
 
@@ -78,7 +78,7 @@
                 <span class="text-info">Subtotal: $999</span>
                 <div class="card-actions">
                   <button
-                    class="btn bg-custom-green hover:bg-custom-half-green text-black btn-block"
+                    class="btn bg-custom-green hover:bg-custom-half-green border-lime-500 hover:border-lime-500 text-black btn-block"
                   >
                     View cart
                   </button>
@@ -119,11 +119,11 @@
               class="menu menu-sm space-y-2 bg-custom-green dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow float-start absolute"
               style="right: 0px"
             >
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a class="eachMenu" href="./index.html">Home</a></li>
+              <li><a class="eachMenu" href="">Services</a></li>
+              <li><a class="eachMenu" href="">Portfolio</a></li>
+              <li><a class="eachMenu" href="">News</a></li>
+              <li><a class="eachMenu" href="">Contact Us</a></li>
               <li
                 class="btn btn-sm btn-ghost bg-white sm:hidden"
                 style="padding: 0.4rem 0.2rem"
@@ -703,29 +703,106 @@
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
 
-          <form class="grid gap-6 py-4 lg:w-[70%] m-auto" action="" method="post">
+          <form
+            class="grid gap-6 py-4 lg:w-[70%] m-auto"
+            action=""
+            method="post"
+          >
             <div class="grid sm:flex gap-6">
-              <input type="text" name="firstName" id="firstName" required minlength="2" placeholder="First Name *">
-              <input type="text" name="lastName" id="lastName" required minlength="2" placeholder="Last Name *">
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                required
+                minlength="2"
+                placeholder="First Name *"
+              />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                required
+                minlength="2"
+                placeholder="Last Name *"
+              />
             </div>
             <div class="grid sm:flex gap-6">
-              <input type="number" name="phone" id="phone" required minlength="11" placeholder="Phone Number *">
-              <input type="email" name="Email" id="Email" required placeholder="Email *">
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                required
+                minlength="11"
+                placeholder="Phone Number *"
+              />
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                required
+                placeholder="Email *"
+              />
             </div>
 
-            <textarea name="massage" id="massage" cols="30" rows="10" required minlength="10" placeholder="Write your message here"></textarea>
+            <textarea
+              name="massage"
+              id="massage"
+              cols="30"
+              rows="10"
+              required
+              minlength="10"
+              placeholder="Write your message here"
+            ></textarea>
 
             <button
+              type="submit"
+              class="btn bg-custom-green hover:bg-custom-half-green text-black border-none rounded-full flex space-x-2 justify-center items-center"
+            >
+              <b class="text-nowrap">Send Mail</b>
+              <i
+                class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 rotate-[310deg]"
+              ></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="CommonSection aboutSection bg-[#1C1C1C]">
+      <div class="container">
+        <div class="space-y-6 text-center">
+
+          <a href="" class="navbar-start flex items-center space-x-2 w-fit m-auto">
+            <i
+              class="fa-solid fa-arrow-right bg-custom-green rounded-full p-2 rotate-[310deg] text-[1.2rem]"
+            ></i>
+            <h3 class="text-white">Rinterio</h3>
+          </a>
+
+          <p class="lg:w-[60%] m-auto text-[#737373]">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+
+          <div class="lg:w-[60%] m-auto flex flex-col gap-4 sm:flex-row sm:gap-0 justify-between items-center">
+            <a href="./index.html" class="eachMenu text-white hover:text-custom-green"> Home</a>
+            <a href="" class="eachMenu text-white hover:text-custom-green"> Service</a>
+            <a href="" class="eachMenu text-white hover:text-custom-green"> Portfolio</a>
+            <a href="" class="eachMenu text-white hover:text-custom-green"> News</a>
+            <a href="" class="eachMenu text-white hover:text-custom-green"> Contact Us</a>
+          </div>
+
+          <a
             type="submit"
-            class="btn bg-custom-green hover:bg-custom-half-green text-black border-none rounded-full hidden sm:flex space-x-2 justify-center items-center"
+            class="btn-lg bg-custom-green hover:bg-custom-half-green text-black border-none rounded-full flex space-x-2 justify-center items-center sm:w-fit m-auto"
           >
-            <h5 class="text-nowrap">Send Mail</h5>
+            <h5 class="text-nowrap">Book Consult</h5>
             <i
               class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 rotate-[310deg]"
             ></i>
-          </button>
-          </form>
-          
+          </a>
         </div>
       </div>
     </section>

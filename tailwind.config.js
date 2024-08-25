@@ -21,6 +21,9 @@ module.exports = {
       //   lg: "1000px",
       //   xl: "1250px",
       // },
+      fontFamily:{
+        'manrope':["Manrope", 'sans-serif'],
+      },
       colors: {
         'custom-green': '#ABEF5F',
         'custom-half-green': 'rgba(172, 239, 95, 0.7)',
