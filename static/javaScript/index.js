@@ -33,8 +33,29 @@ function videosNumberBoxAnimation(target, statisticNumber,icon) {
 }
 
 
+let allStatisticNumber = document.querySelectorAll(`.eachStatisticNumber`);
+let observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry)=>{
+      if(entry.target.className.includes('happyReviews') && entry.isIntersecting){
+        videosNumberBoxAnimation('happyReviews', happyReviews,'+');
+      }else if(entry.target.className.includes('completedProjects') && entry.isIntersecting){
+        videosNumberBoxAnimation('completedProjects', completedProjects,'+');
+      }else if(entry.target.className.includes('happyClient') && entry.isIntersecting){
+        videosNumberBoxAnimation('happyClient', happyClient,'K');
+      }else if(entry.target.className.includes('teamMembers') && entry.isIntersecting){
+        videosNumberBoxAnimation('teamMembers', teamMembers,'+');
+      }
+      if(entry.isIntersecting){
+        observer.unobserve(entry.target)
+      }
+    })
+  },
+  {
+    threshold: 0.8,
+  }
+);
 
-videosNumberBoxAnimation('happyReviews', happyReviews,'+');
-videosNumberBoxAnimation('completedProjects', completedProjects,'+');
-videosNumberBoxAnimation('happyClient', happyClient,'K');
-videosNumberBoxAnimation('teamMembers', teamMembers,'+');
+allStatisticNumber.forEach((eachStatisticNumber)=>{
+  observer.observe(eachStatisticNumber);
+})
