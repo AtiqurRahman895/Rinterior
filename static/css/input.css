@@ -36,9 +36,9 @@
 }
 @layer utilities {
     .CommonSection{
-        @apply pb-16 
+        @apply pb-8 lg:pb-16 
     }
     .aboutSection{
-        @apply py-16
+        @apply py-8 lg:py-16
     }
 }

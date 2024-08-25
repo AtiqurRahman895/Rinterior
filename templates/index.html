@@ -18,13 +18,12 @@
     <link rel="stylesheet" href="../static/css/output.css" />
   </head>
   <body class="text-black">
-
     <!-- navbar -->
     <header class="w-[100%] pt-4">
       <div class="navbar container">
         <a href="" class="navbar-start flex space-x-2">
           <i
-            class="fa-solid fa-arrow-right bg-custom-green rounded-full p-2 rotate-[310deg]"
+            class="fa-solid fa-arrow-right bg-custom-green rounded-full p-2 rotate-[310deg] text-[1.2rem]"
           ></i>
           <h3 class="">Rinterio</h3>
         </a>
@@ -38,7 +37,7 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-        
+
         <div class="navbar-end space-x-2">
           <button
             class="btn btn-sm btn-ghost bg-white btn-circle hidden sm:inline-block"
@@ -90,9 +89,9 @@
 
           <a
             href=""
-            class="btn bg-custom-green hover:bg-custom-half-green text-black border-none rounded-full hidden sm:flex space-x-2 justify-center items-center"
+            class="btn-lg bg-custom-green hover:bg-custom-half-green text-black border-none rounded-full hidden sm:flex space-x-2 justify-center items-center"
           >
-            <b>Book Consult</b>
+            <h5 class="text-nowrap">Book Consult</h5>
             <i
               class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 rotate-[310deg]"
             ></i>
@@ -129,7 +128,7 @@
                 class="btn btn-sm btn-ghost bg-white sm:hidden"
                 style="padding: 0.4rem 0.2rem"
               >
-                <i class="fa-solid fa-magnifying-glass" style=""></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
               </li>
 
               <li class="sm:hidden bg-white rounded-lg" style="width: 100%">
@@ -187,9 +186,9 @@
         </p>
         <a
           href=""
-          class="btn bg-custom-half-green hover:bg-custom-green text-black w-fit m-auto border-2 border-lime-400 hover:border-lime-400 rounded-full hidden sm:flex space-x-2 justify-center items-center"
+          class="btn-lg bg-custom-half-green hover:bg-custom-green text-black w-fit m-auto border-2 border-lime-400 hover:border-lime-400 rounded-full flex space-x-2 justify-center items-center"
         >
-          <b>View Details</b>
+          <h5>View Details</h5>
           <i
             class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 rotate-[310deg]"
           ></i>
@@ -200,12 +199,15 @@
     <!-- about us -->
 
     <section class="CommonSection aboutSection bg-custom-ash">
-      
       <div class="container grid grid-cols-1 lg:grid-cols-2 gap-8 relative">
-        <img src="../static/assets/Vector.png" alt="" class="absolute top-[-7%] left-[-2%] w-[6.5rem] hidden lg:inline-block">
+        <img
+          src="../static/assets/Vector.png"
+          alt=""
+          class="absolute top-[-7%] left-[-2%] w-[6.5rem] hidden lg:inline-block"
+        />
         <div class="space-y-4 text-center lg:text-start">
           <div
-            class="btn bg-white hover:bg-white text-black w-fit m-auto lg:m-0 border-2 border-white hover:border-white rounded-full hidden sm:flex space-x-2 justify-center items-center"
+            class="btn bg-white hover:bg-white text-black w-fit m-auto lg:m-0 border-2 border-white hover:border-white rounded-full flex space-x-2 justify-center items-center"
           >
             <i
               class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 rotate-[390deg]"
@@ -223,7 +225,7 @@
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 justify-between gap-4 text-start"
           >
             <a
-            href=""
+              href=""
               class="p-4 rounded-xl bg-white hover:bg-custom-half-green hover:scale-[1.05] duration-[0.6s] text-black border-none flex space-x-3 items-center"
             >
               <img
@@ -241,7 +243,7 @@
             </a>
 
             <a
-            href=""
+              href=""
               class="p-4 rounded-xl bg-white hover:bg-custom-half-green hover:scale-[1.05] duration-[0.6s] text-black border-none flex space-x-3 items-center"
             >
               <img
@@ -260,93 +262,275 @@
           </div>
         </div>
 
-        <div class="w-[100%] aspect-[3/1.5] lg:h-[100%] rounded-xl" style="background: url(../static/assets/article3.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
-
-        </div>
+        <div
+          class="w-[100%] aspect-[3/1.5] lg:h-[100%] rounded-xl"
+          style="
+            background: url(../static/assets/article3.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        ></div>
       </div>
     </section>
 
     <!-- states -->
 
     <section class="CommonSection aboutSection bg-custom-ash">
-      <div class="container rounded-xl bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12  py-12">
-        <div class="text-center">
-          <i class="fa-solid fa-comment text-[50px]"></i>
-          <h2 >250+</h2>
-          <p>Happy Client Review</p>
-        </div>
+      <div class="container">
+        <div
+          class="rounded-xl bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 py-12"
+        >
+          <div class="text-center">
+            <i class="fa-solid fa-comment text-[50px]"></i>
+            <h2>250+</h2>
+            <p>Happy Client Review</p>
+          </div>
 
-        <div class="text-center">
-          <i class="fa-solid fa-building-user text-[50px]"></i>
-          <h2 >50+</h2>
-          <p>Work Departments</p>
-        </div>
+          <div class="text-center">
+            <i class="fa-solid fa-building-user text-[50px]"></i>
+            <h2>50+</h2>
+            <p>Work Departments</p>
+          </div>
 
-        <div class="text-center">
-          <i class="fa-solid fa-users text-[50px]"></i>
-          <h2 >30K</h2>
-          <p>Our Happy Client</p>
-        </div>
+          <div class="text-center">
+            <i class="fa-solid fa-users text-[50px]"></i>
+            <h2>30K</h2>
+            <p>Our Happy Client</p>
+          </div>
 
-        <div class="text-center">
-          <i class="fa-solid fa-user-group text-[50px]"></i>
-          <h2 >307+</h2>
-          <p>Staff Members</p>
+          <div class="text-center">
+            <i class="fa-solid fa-user-group text-[50px]"></i>
+            <h2>307+</h2>
+            <p>Staff Members</p>
+          </div>
         </div>
-
       </div>
     </section>
 
     <!-- process -->
 
     <section class="CommonSection aboutSection bg-custom-ash">
-      
-      <div class="container space-y-8 ">
-        <img src="../static/assets/Vector.png" alt="" class="absolute top-[-7%] left-[-2%] w-[6.5rem] hidden lg:inline-block">
+      <div class="container space-y-8">
         <div class="space-y-4 text-center">
           <div
-            class="btn bg-white hover:bg-white text-black w-fit m-auto border-2 border-white hover:border-white rounded-full hidden sm:flex space-x-2 justify-center items-center"
+            class="btn-lg bg-white hover:bg-white text-black w-fit m-auto border-2 border-white hover:border-white rounded-full flex space-x-2 justify-center items-center"
           >
             <i
               class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 rotate-[390deg]"
             ></i>
-            <b>How we works</b>
+            <h5>How we works</h5>
           </div>
 
           <h2>Our Works Process</h2>
           <p class="lg:w-[60%] m-auto">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
           </p>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-4"
+          >
             <div class="text-start p-4 bg-[#E7C1D3] rounded-xl space-y-3">
-              <img src="../static/assets/concept.png" alt="" class="w-[50px]">
-              <h5 >Concept</h5>
-              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <img src="../static/assets/concept.png" alt="" class="w-[50px]" />
+              <h5>Concept</h5>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
             </div>
-    
+
             <div class="text-start p-4 bg-[#EFDA6E] rounded-xl space-y-3">
-              <img src="../static/assets/flow-chart.png" alt="" class="w-[50px]">
-              <h5 >Design Process</h5>
-              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <img
+                src="../static/assets/flow-chart.png"
+                alt=""
+                class="w-[50px]"
+              />
+              <h5>Design Process</h5>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
             </div>
-    
+
             <div class="text-start p-4 bg-[#A4DAC3] rounded-xl space-y-3">
-              <img src="../static/assets/vision.png" alt="" class="w-[50px]">
-              <h5 >Supervision</h5>
-              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <img src="../static/assets/vision.png" alt="" class="w-[50px]" />
+              <h5>Supervision</h5>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
             </div>
-    
+
             <div class="text-start p-4 bg-[#77AAEA] rounded-xl space-y-3">
-              <img src="../static/assets/budget-planning.png" alt="" class="w-[50px]">
-              <h5 >Budget Planning</h5>
-              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              <img
+                src="../static/assets/budget-planning.png"
+                alt=""
+                class="w-[50px]"
+              />
+              <h5>Budget Planning</h5>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
             </div>
-    
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- portfolio -->
 
+    <section class="CommonSection aboutSection bg-custom-ash">
+      <div class="container space-y-8">
+        <div class="space-y-4 text-center">
+          <div
+            class="btn bg-custom-half-green hover:bg-custom-half-green text-black w-fit m-auto border-none rounded-full flex space-x-2 justify-center items-center"
+          >
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white rounded-full p-1 rotate-[390deg]"
+            ></i>
+            <b>Explore our Latest works</b>
+          </div>
+
+          <h2>Our Latest Portfolio</h2>
+          <p class="lg:w-[60%] m-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+
+          <div class="space-y-4 py-4">
+
+            <div class="grid lg:grid-cols-[1fr,1fr] gap-4">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-[1fr,1.5fr] rounded-xl border gap-4 p-4 bg-white"
+              >
+                <div
+                  class="aspect-[2/1] sm:aspect-auto sm:h-[100%] rounded-xl"
+                  style="
+                    background: url(../static/assets/img1.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                  "
+                ></div>
+
+                <div class="space-y-4 text-start">
+                  <h4>Commercial</h4>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and
+                    modern. The barn house captivates with its blend of rustic
+                    charm and modern .
+                  </p>
+                  <a
+                    href=""
+                    class="btn bg-white hover:bg-custom-half-green text-black w-fit border-2 border-custom-ash hover:border-lime-400 rounded-full flex space-x-2 justify-center items-center"
+                  >
+                    <b>View Details</b>
+                    <i
+                      class="fa-solid fa-arrow-right bg-custom-green text-black rounded-full p-1 rotate-[310deg]"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-[1fr,1fr] gap-4">
+                <div
+                  class="rounded-xl border gap-4 p-4 bg-white"
+                >
+                  <div
+                    class="aspect-[2/1] sm:aspect-[3/2] lg:aspect-auto lg:h-[100%] rounded-xl p-4"
+                    style="
+                      background: url(../static/assets/img2.png);
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: cover;
+                    "
+                  ></div>
+                </div>
+
+                <div
+                class="rounded-xl border gap-4 p-4 bg-white"
+              >
+                <div
+                  class="aspect-[2/1] sm:aspect-[3/2] lg:aspect-auto lg:h-[100%] rounded-xl p-4"
+                  style="
+                    background: url(../static/assets/img3.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+
+              </div>
+            </div>
+
+            <div class="grid lg:grid-cols-[1fr,1fr] gap-4">
+              <div
+                class="grid grid-cols-1 sm:grid-cols-[1fr,1.5fr] lg:grid-cols-[1.5fr,1fr] rounded-xl border gap-4 p-4 bg-white lg:order-2"
+              >
+                <div
+                  class="aspect-[2/1] sm:aspect-auto sm:h-[100%] rounded-xl lg:order-2"
+                  style="
+                    background: url(../static/assets/img4.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                  "
+                ></div>
+
+                <div class="space-y-4 text-start">
+                  <h4>Residential</h4>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and
+                    modern. The barn house captivates with its blend of rustic
+                    charm and modern .
+                  </p>
+                  <a
+                    href=""
+                    class="btn bg-white hover:bg-custom-half-green text-black w-fit border-2 border-custom-ash hover:border-lime-400 rounded-full flex space-x-2 justify-center items-center"
+                  >
+                    <b>View Details</b>
+                    <i
+                      class="fa-solid fa-arrow-right bg-custom-green text-black rounded-full p-1 rotate-[310deg]"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-[1fr,1fr] gap-4">
+                <div
+                  class="rounded-xl border gap-4 p-4 bg-white"
+                >
+                  <div
+                    class="aspect-[2/1] sm:aspect-[3/2] lg:aspect-auto lg:h-[100%] rounded-xl p-4"
+                    style="
+                      background: url(../static/assets/img5.png);
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: cover;
+                    "
+                  ></div>
+                </div>
+
+                <div
+                class="rounded-xl border gap-4 p-4 bg-white"
+              >
+                <div
+                  class="aspect-[2/1] sm:aspect-[3/2] lg:aspect-auto lg:h-[100%] rounded-xl p-4"
+                  style="
+                    background: url(../static/assets/img3.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

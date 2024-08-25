@@ -7396,6 +7396,9 @@ html:has(.drawer-open.drawer-open) {
 .hidden {
   display: none;
 }
+.aspect-\[2\/1\] {
+  aspect-ratio: 2/1;
+}
 .aspect-\[3\/1\.5\] {
   aspect-ratio: 3/1.5;
 }
@@ -8234,6 +8237,10 @@ html:has(.drawer-open.drawer-open) {
 .border-none {
   border-style: none;
 }
+.border-custom-ash {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 241 241 / var(--tw-border-opacity));
+}
 .border-lime-400 {
   --tw-border-opacity: 1;
   border-color: rgb(163 230 53 / var(--tw-border-opacity));
@@ -8450,6 +8457,9 @@ html:has(.drawer-open.drawer-open) {
 }
 .align-super {
   vertical-align: super;
+}
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
 }
 .text-\[50px\] {
   font-size: 50px;
@@ -8820,11 +8830,22 @@ html:has(.drawer-open.drawer-open) {
   forced-color-adjust: none;
 }
 .CommonSection {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 1024px) {
+  .CommonSection {
+    padding-bottom: 4rem;
+  }
 }
 .aboutSection {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 1024px) {
+  .aboutSection {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 @media (hover:hover) {
   .table .\*\:hover > *tr:hover,
@@ -8985,11 +9006,26 @@ html:has(.drawer-open.drawer-open) {
   .sm\:hidden {
     display: none;
   }
+  .sm\:aspect-\[3\/2\] {
+    aspect-ratio: 3/2;
+  }
+  .sm\:aspect-auto {
+    aspect-ratio: auto;
+  }
+  .sm\:h-\[100\%\] {
+    height: 100%;
+  }
   .sm\:w-\[70\%\] {
     width: 70%;
   }
   .sm\:w-\[90\%\] {
     width: 90%;
+  }
+  .sm\:grid-cols-\[1fr\2c 1\.5fr\] {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .sm\:grid-cols-\[1fr\2c 1fr\] {
+    grid-template-columns: 1fr 1fr;
   }
   .sm\:underline {
     text-decoration-line: underline;
@@ -9001,6 +9037,9 @@ html:has(.drawer-open.drawer-open) {
   }
 }
 @media (min-width: 1024px) {
+  .lg\:order-2 {
+    order: 2;
+  }
   .lg\:m-0 {
     margin: 0px;
   }
@@ -9012,6 +9051,9 @@ html:has(.drawer-open.drawer-open) {
   }
   .lg\:hidden {
     display: none;
+  }
+  .lg\:aspect-auto {
+    aspect-ratio: auto;
   }
   .lg\:h-\[100\%\] {
     height: 100%;
@@ -9033,6 +9075,12 @@ html:has(.drawer-open.drawer-open) {
   }
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-\[1\.5fr\2c 1fr\] {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .lg\:grid-cols-\[1fr\2c 1fr\] {
+    grid-template-columns: 1fr 1fr;
   }
   .lg\:text-start {
     text-align: start;
