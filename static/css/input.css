@@ -33,6 +33,18 @@
   p,span,a{
     font-size: 14px;
   }
+  input,textarea{
+    @apply w-full outline-none bg-white text-black p-3 
+  }
+  input{
+    @apply rounded-full
+  }
+  textarea{
+    @apply rounded-xl
+  }
+  input,textarea{
+    @apply focus:invalid:border-2 focus:invalid:border-rose-300 focus:valid:border-2 focus:valid:border-custom-green
+  }
 }
 @layer utilities {
     .CommonSection{

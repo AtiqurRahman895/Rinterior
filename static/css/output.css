@@ -621,6 +621,32 @@ body {
 p,span,a{
     font-size: 14px;
   }
+input,textarea {
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+input {
+  border-radius: 9999px;
+}
+textarea {
+  border-radius: 0.75rem;
+}
+input:valid:focus,textarea:valid:focus {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(171 239 95 / var(--tw-border-opacity));
+}
+input:invalid:focus,textarea:invalid:focus {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(253 164 175 / var(--tw-border-opacity));
+}
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -7845,6 +7871,9 @@ html:has(.drawer-open.drawer-open) {
 .justify-items-stretch {
   justify-items: stretch;
 }
+.gap-1 {
+  gap: 0.25rem;
+}
 .gap-4 {
   gap: 1rem;
 }
@@ -8291,6 +8320,10 @@ html:has(.drawer-open.drawer-open) {
 .bg-custom-white {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+.bg-lime-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 249 157 / var(--tw-bg-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -8971,6 +9004,10 @@ html:has(.drawer-open.drawer-open) {
 .hover\:bg-custom-half-green:hover {
   background-color: rgba(172, 239, 95, 0.7);
 }
+.hover\:bg-lime-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 249 157 / var(--tw-bg-opacity));
+}
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -9052,11 +9089,17 @@ html:has(.drawer-open.drawer-open) {
   .lg\:hidden {
     display: none;
   }
+  .lg\:aspect-\[3\/2\] {
+    aspect-ratio: 3/2;
+  }
   .lg\:aspect-auto {
     aspect-ratio: auto;
   }
   .lg\:h-\[100\%\] {
     height: 100%;
+  }
+  .lg\:h-auto {
+    height: auto;
   }
   .lg\:w-\[50\%\] {
     width: 50%;
@@ -9067,11 +9110,17 @@ html:has(.drawer-open.drawer-open) {
   .lg\:w-\[60px\] {
     width: 60px;
   }
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
   .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
