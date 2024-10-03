@@ -41,11 +41,27 @@
         </div>
 
         <div class="navbar-end space-x-2">
-          <button
+          <!-- <button
             class="btn btn-sm btn-ghost bg-white btn-circle hidden sm:inline-block"
           >
             <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+          </button> -->
+
+          <div class="dropdown dropdown-end hidden sm:inline-block">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-sm bg-white btn-ghost btn-circle border border-1px border-purple-50 flex"
+            >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              tabindex="0"
+              class="card card-compact bg-white dropdown-content z-[1] mt-3 w-52 shadow"
+            >
+            <input type="search" name="search" id="search" style="border-radius: 10px; padding-block: 10px 12px; border: none;" class="py-3" placeholder="search..">
+            </div>
+          </div>
 
           <div class="dropdown dropdown-end hidden sm:inline-block">
             <div
@@ -73,7 +89,7 @@
             </div>
             <div
               tabindex="0"
-              class="card card-compact dropdown-content z-[1] mt-3 w-52 shadow"
+              class="card card-compact bg-white rounded-md dropdown-content z-[1] mt-3 w-52 shadow"
             >
               <div class="card-body">
                 <span class="text-lg font-bold">8 Items</span>
@@ -129,10 +145,9 @@
               <li><a class="eachMenu" href="#newsSection">News</a></li>
               <li><a class="eachMenu" href="#connectSection">Contact Us</a></li>
               <li
-                class="btn btn-sm btn-ghost bg-white sm:hidden"
-                style="padding: 0.4rem 0.2rem"
+                class="sm:hidden bg-white rounded-lg"
               >
-                <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="search" name="search" id="search" style="border-radius: 10px; padding-block: 10px 12px; border: none;" class="py-3" placeholder="search..">
               </li>
 
               <li class="sm:hidden bg-white rounded-lg" style="width: 100%">
